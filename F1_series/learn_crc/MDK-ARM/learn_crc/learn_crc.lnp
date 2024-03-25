@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"learn_crc\startup_stm32f103xb.o"
+"learn_crc\main.o"
+"learn_crc\gpio.o"
+"learn_crc\crc.o"
+"learn_crc\stm32f1xx_it.o"
+"learn_crc\stm32f1xx_hal_msp.o"
+"learn_crc\stm32f1xx_hal_gpio_ex.o"
+"learn_crc\stm32f1xx_hal_crc.o"
+"learn_crc\stm32f1xx_hal.o"
+"learn_crc\stm32f1xx_hal_rcc.o"
+"learn_crc\stm32f1xx_hal_rcc_ex.o"
+"learn_crc\stm32f1xx_hal_gpio.o"
+"learn_crc\stm32f1xx_hal_dma.o"
+"learn_crc\stm32f1xx_hal_cortex.o"
+"learn_crc\stm32f1xx_hal_pwr.o"
+"learn_crc\stm32f1xx_hal_flash.o"
+"learn_crc\stm32f1xx_hal_flash_ex.o"
+"learn_crc\stm32f1xx_hal_exti.o"
+"learn_crc\stm32f1xx_hal_tim.o"
+"learn_crc\stm32f1xx_hal_tim_ex.o"
+"learn_crc\system_stm32f1xx.o"
+--strict --scatter "learn_crc\learn_crc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "learn_crc.map" -o learn_crc\learn_crc.axf
