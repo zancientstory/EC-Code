@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "motor.h": "c",
+        "bsp_can.h": "c",
+        "chassis_task.h": "c",
+        "remote.h": "c",
+        "pid.h": "c",
+        "bsp_delay.h": "c",
+        "stdint.h": "c",
+        "bsp_imu_pwm.h": "c",
+        "bsp_spi.h": "c",
+        "bmi088driver.h": "c",
+        "main.h": "c",
+        "bmi088middleware.h": "c",
+        "bmi088reg.h": "c",
+        "ist8310driver.h": "c",
+        "ist8310driver_middleware.h": "c",
+        "ins_task.h": "c"
+    }
+}

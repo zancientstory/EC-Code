@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"base\startup_stm32f103xb.o"
+"base\main.o"
+"base\gpio.o"
+"base\dma.o"
+"base\usart.o"
+"base\stm32f1xx_it.o"
+"base\stm32f1xx_hal_msp.o"
+"base\stm32f1xx_hal_gpio_ex.o"
+"base\stm32f1xx_hal_tim.o"
+"base\stm32f1xx_hal_tim_ex.o"
+"base\stm32f1xx_hal_uart.o"
+"base\stm32f1xx_hal.o"
+"base\stm32f1xx_hal_rcc.o"
+"base\stm32f1xx_hal_rcc_ex.o"
+"base\stm32f1xx_hal_gpio.o"
+"base\stm32f1xx_hal_dma.o"
+"base\stm32f1xx_hal_cortex.o"
+"base\stm32f1xx_hal_pwr.o"
+"base\stm32f1xx_hal_flash.o"
+"base\stm32f1xx_hal_flash_ex.o"
+"base\stm32f1xx_hal_exti.o"
+"base\system_stm32f1xx.o"
+--strict --scatter "base\base.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "base.map" -o base\base.axf

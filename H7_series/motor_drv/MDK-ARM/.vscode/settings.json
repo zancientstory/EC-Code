@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "motordrv.h": "c",
+        "feet_motor.h": "c",
+        "fdcan.h": "c"
+    }
+}

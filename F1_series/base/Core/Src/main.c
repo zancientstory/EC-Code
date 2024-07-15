@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -85,6 +87,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -96,6 +100,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		//HAL_UART_Transmit(&huart1,"zhang",6,100);
+		HAL_UART_Transmit_DMA(&huart1,"shu",3);
+		HAL_Delay(10);
+		HAL_UART_Transmit_DMA(&huart1,"jia",3);
+		HAL_Delay(10);
+
   }
   /* USER CODE END 3 */
 }
